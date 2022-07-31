@@ -1,10 +1,765 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sunrise Academy</title>
-  </head>
-  <body></body>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <!-- Fontawesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <title>Sunrise Academy</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container py-2">
+        <a class="navbar-brand logo" href="#">Sunrise Academy</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item px-2">
+              <a class="nav-link" aria-current="page" href="#hero">Home</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#categories">Categories</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" aria-current="page" href="#">Courses</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#events">Events</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" aria-current="page" href="#pricing">Our Membership</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+          </ul>
+          <button class="btn btn-primary bg-white"><a href="#courses" class="text-decoration-none">Get
+              Started</a></button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero section -->
+    <section class="hero bg-light px-5 pt-5" id="hero">
+      <div class="row">
+        <div class="col-12 col-lg-6 p-lg-5 py-5">
+          <h2>Access 2700+</h2>
+          <h1>Online Tutorial From Top Instructor.</h1>
+          <p>
+            Meet university,and cultural institutions, who'll share their
+            experience.
+          </p>
+          <button class="btn btn-primary btn-lg"><a href="#courses" class="text-white text-decoration-none">View All
+              Courses</a></button>
+        </div>
+        <div class="col-12 col-lg-6 pb-5 p-lg-0">
+          <img src="./images/hero-1.jpg" alt="" class="img-1" />
+          <img src="./images/hero-sm-1.jpg" alt="" class="img-2" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories section -->
+    <section class="categories container py-5" id="categories">
+      <div class="categories-heading d-lg-flex justify-content-between align-items-center">
+        <div class="heading-text">
+          <h2>Explore</h2>
+          <h2>Our Courses</h2>
+        </div>
+        <div class="category-btn">
+          <a href="#courses" class="text-decoration-none">View all Courses</a><i
+            class="fa-solid fa-arrow-right ps-2 text-primary"></i>
+        </div>
+      </div>
+
+      <div class="categories-grid pt-4">
+        <div class="single-category">
+          <div class="">
+            <div class="row g-3">
+              <!-- Category-1 -->
+              <div class="col-12 col-lg-4">
+                <div class="px-5 py-4 border border-2 d-flex align-items-center">
+                  <div class="categories-icon">
+                    <i class="fa-solid fa-database"></i>
+                  </div>
+                  <div class="categories-info px-3 pb-0">
+                    <h5 class="category-name">Data Science</h5>
+                    <p class="mb-0">Data is Everything</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Category-2 -->
+              <div class="col-12 col-lg-4">
+                <div class="px-5 py-4 border border-2 d-flex align-items-center">
+                  <div class="categories-icon">
+                    <i class="fa-solid fa-business-time"></i>
+                  </div>
+                  <div class="categories-info px-3 pb-0">
+                    <h5 class="category-name">Business
+                    </h5>
+                    <p class="mb-0">
+                      Improve your business</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Category-3 -->
+              <div class="col-12 col-lg-4">
+                <div class="px-5 py-4 border border-2 d-flex align-items-center">
+                  <div class="categories-icon">
+                    <i class="fa-brands fa-artstation"></i>
+                  </div>
+                  <div class="categories-info px-3 pb-0">
+                    <h5 class="category-name">Art & Design
+                    </h5>
+                    <p class="mb-0">
+                      Fun & Challenging</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Category-4 -->
+              <div class="col-12 col-lg-4">
+                <div class="px-5 py-4 border border-2 d-flex align-items-center">
+                  <div class="categories-icon">
+                    <i class="fa-solid fa-atom"></i>
+                  </div>
+                  <div class="categories-info px-3 pb-0">
+                    <h5 class="category-name">Lifestyle
+                    </h5>
+                    <p class="mb-0">
+                      New Skills, New You</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Category-5 -->
+              <div class="col-12 col-lg-4">
+                <div class="px-5 py-4 border border-2 d-flex align-items-center">
+                  <div class="categories-icon">
+                    <i class="fa-solid fa-chart-pie"></i>
+                  </div>
+                  <div class="categories-info px-3 pb-0">
+                    <h5 class="category-name">Marketing
+                    </h5>
+                    <p class="mb-0">
+                      Improve your business</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Category-6 -->
+              <div class="col-12 col-lg-4">
+                <div class="px-5 py-4 border border-2 d-flex align-items-center">
+                  <div class="categories-icon">
+                    <i class="fa-solid fa-chart-column"></i>
+                  </div>
+                  <div class="categories-info px-3 pb-0">
+                    <h5 class="category-name">Finance
+                    </h5>
+                    <p class="mb-0">
+                      Fun & Challenging</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Category-7 -->
+              <div class="col-12 col-lg-4">
+                <div class="px-5 py-4 border border-2 d-flex align-items-center">
+                  <div class="categories-icon">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                  </div>
+                  <div class="categories-info px-3 pb-0">
+                    <h5 class="category-name">Health & Fitness
+                    </h5>
+                    <p class="mb-0">
+                      Invest to Your Body</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Category-8 -->
+              <div class="col-12 col-lg-4">
+                <div class="px-5 py-4 border border-2 d-flex align-items-center">
+                  <div class="categories-icon">
+                    <i class="fa-solid fa-microphone-lines"></i>
+                  </div>
+                  <div class="categories-info px-3 pb-0">
+                    <h5 class="category-name">Music
+                    </h5>
+                    <p class="mb-0">
+                      Major or Minor</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Category-9 -->
+              <div class="col-12 col-lg-4">
+                <div class="px-5 py-4 border border-2 d-flex align-items-center">
+                  <div class="categories-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                  </div>
+                  <div class="categories-info px-3 pb-0">
+                    <h5 class="category-name">Academics
+                    </h5>
+                    <p class="mb-0">
+                      High Education Level</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banners section -->
+    <section class="banners container py-4 mb-5" id="banners">
+      <div>
+        <div class="row gx-0 gx-lg-5 container mx-auto mb-5">
+          <!-- Banner-1 -->
+          <div class="col-12 col-lg-6 banner1 d-flex justify-content-end align-items-center rounded">
+            <div class="py-3 col-6 ms-3">
+              <span class="badge rounded-pill bg-danger px-3">Free</span>
+              <h4 class="text-white py-3">
+                Germany Foundation
+                Document
+              </h4>
+              <button class="btn btn-primary"><a href="#courses" class="text-white text-decoration-none">View All
+                  Courses</a></button>
+            </div>
+          </div>
+          <!-- Banner-2 -->
+          <div class="col-12 col-lg-6 banner2 d-flex align-items-center border rounded">
+            <div class="py-3 col-6 ms-3 ">
+              <span class="badge rounded-pill bg-warning px-3">New</span>
+              <h4 class="text-white py-3">
+                Online Courses
+                From Eduka University
+              </h4>
+              <button class="btn btn-primary"><a href="#courses" class="text-white text-decoration-none">Find Out
+                  More</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course section -->
+    <section class="courses py-5 bg-light" id="courses">
+      <div class="container py-5">
+        <div class="course-heading">
+          <h2>Find The Right</h2>
+          <h2>Online Course For You</h2>
+          <p>
+            You don't have to struggle alone, you've got our assistance and
+            help.
+          </p>
+        </div>
+
+        <div class="row g-4 pt-4">
+          <!-- Course-1 -->
+          <div class="col-12 col-lg-4 col-md-6 single-course">
+            <div class="border bg-white rounded course-shadow">
+              <div class="course-img">
+                <span class="badge bg-primary course-badge">Design</span>
+                <img src="./images/course (1).jpg" alt="" />
+              </div>
+              <div class="course-details p-4">
+                <div class="details-header d-flex justify-content-between">
+                  <div class="lesson">
+                    <i class="fa-solid fa-book"></i>
+                    <span>43 Lesson</span>
+                  </div>
+                  <div class="ratings">
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.5 (44)</span>
+                  </div>
+                </div>
+                <h4 class="pt-3">
+                  Become a product Manager learn the skills & job.
+                </h4>
+                <div class="instructor d-flex align-items-center py-2">
+                  <img src="./images/instructor.png" alt="" />
+                  <p class="pt-3 ps-2">Barry Tone</p>
+                </div>
+                <hr />
+                <div class="course-footer d-flex justify-content-between align-items-center">
+                  <div class="footer-left">
+                    <span class="text-primary price">$21.00</span>
+                    <span class="text-decoration-line-through">$33.00</span>
+                  </div>
+                  <div class="footer-right">
+                    <a href="" class="text-decoration-none pe-2">See Details</a>
+                    <i class="fa-solid fa-arrow-right-long text-primary"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Course-2 -->
+          <div class="col-12 col-lg-4 col-md-6 single-course">
+            <div class="border bg-white rounded course-shadow">
+              <div class="course-img">
+                <span class="badge bg-warning course-badge">Development</span>
+                <img src="./images/course (2).jpg" alt="" />
+              </div>
+              <div class="course-details p-4">
+                <div class="details-header d-flex justify-content-between">
+                  <div class="lesson">
+                    <i class="fa-solid fa-book"></i>
+                    <span>24 Lesson</span>
+                  </div>
+                  <div class="ratings">
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.1 (49)</span>
+                  </div>
+                </div>
+                <h4 class="pt-3">
+                  Fundamentals of music theory Learn new
+                </h4>
+                <div class="instructor d-flex align-items-center py-2">
+                  <img src="./images/instructor.png" alt="" />
+                  <p class="pt-3 ps-2">Jim Séchen</p>
+                </div>
+                <hr />
+                <div class="course-footer d-flex justify-content-between align-items-center">
+                  <div class="footer-left">
+                    <span class="text-primary price">$46.00</span>
+                    <span class="text-decoration-line-through">$58.00</span>
+                  </div>
+                  <div class="footer-right">
+                    <a href="" class="text-decoration-none pe-2">See Details</a>
+                    <i class="fa-solid fa-arrow-right-long text-primary"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Course-3 -->
+          <div class="col-12 col-lg-4 col-md-6 single-course">
+            <div class="border bg-white rounded course-shadow">
+              <div class="course-img">
+                <span class="badge bg-danger course-badge">Marketing</span>
+                <img src="./images/course (3).jpg" alt="" />
+              </div>
+              <div class="course-details p-4">
+                <div class="details-header d-flex justify-content-between">
+                  <div class="lesson">
+                    <i class="fa-solid fa-book"></i>
+                    <span>64 Lesson</span>
+                  </div>
+                  <div class="ratings">
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.2 (38)</span>
+                  </div>
+                </div>
+                <h4 class="pt-3">
+                  Bases Matemáticas dios Álgebra Ecuacion
+                </h4>
+                <div class="instructor d-flex align-items-center py-2">
+                  <img src="./images/instructor.png" alt="" />
+                  <p class="pt-3 ps-2">Samuel Serif</p>
+                </div>
+                <hr />
+                <div class="course-footer d-flex justify-content-between align-items-center">
+                  <div class="footer-left">
+                    <span class="text-primary price">$14.00</span>
+                    <span class="text-decoration-line-through">$26.00</span>
+                  </div>
+                  <div class="footer-right">
+                    <a href="" class="text-decoration-none pe-2">See Details</a>
+                    <i class="fa-solid fa-arrow-right-long text-primary"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Course-4 -->
+          <div class="col-12 col-lg-4 col-md-6 single-course">
+            <div class="border bg-white rounded course-shadow">
+              <div class="course-img">
+                <span class="badge bg-danger course-badge">Design</span>
+                <img src="./images/course (4).jpg" alt="" />
+              </div>
+              <div class="course-details p-4">
+                <div class="details-header d-flex justify-content-between">
+                  <div class="lesson">
+                    <i class="fa-solid fa-book"></i>
+                    <span>56 Lesson</span>
+                  </div>
+                  <div class="ratings">
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.8 (78)</span>
+                  </div>
+                </div>
+                <h4 class="pt-3">
+                  Strategy law and organization Foundation
+                </h4>
+                <div class="instructor d-flex align-items-center py-2">
+                  <img src="./images/instructor.png" alt="" />
+                  <p class="pt-3 ps-2">Elon Gated</p>
+                </div>
+                <hr />
+                <div class="course-footer d-flex justify-content-between align-items-center">
+                  <div class="footer-left">
+                    <span class="text-primary price">$48.00</span>
+                    <span class="text-decoration-line-through">$65.00</span>
+                  </div>
+                  <div class="footer-right">
+                    <a href="" class="text-decoration-none pe-2">See Details</a>
+                    <i class="fa-solid fa-arrow-right-long text-primary"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Course-5 -->
+          <div class="col-12 col-lg-4 col-md-6 single-course">
+            <div class="border bg-white rounded course-shadow">
+              <div class="course-img">
+                <span class="badge bg-primary course-badge">Development</span>
+                <img src="./images/course (5).jpg" alt="" />
+              </div>
+              <div class="course-details p-4">
+                <div class="details-header d-flex justify-content-between">
+                  <div class="lesson">
+                    <i class="fa-solid fa-book"></i>
+                    <span>35 Lesson</span>
+                  </div>
+                  <div class="ratings">
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.6 (21)</span>
+                  </div>
+                </div>
+                <h4 class="pt-3">
+                  The business Intelligence analyst Course 2022
+                </h4>
+                <div class="instructor d-flex align-items-center py-2">
+                  <img src="./images/instructor.png" alt="" />
+                  <p class="pt-3 ps-2">Eleanor Fant</p>
+                </div>
+                <hr />
+                <div class="course-footer d-flex justify-content-between align-items-center">
+                  <div class="footer-left">
+                    <span class="text-primary price">$31.00</span>
+                    <span class="text-decoration-line-through">$50.00</span>
+                  </div>
+                  <div class="footer-right">
+                    <a href="" class="text-decoration-none pe-2">See Details</a>
+                    <i class="fa-solid fa-arrow-right-long text-primary"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Course-6 -->
+          <div class="col-12 col-lg-4 col-md-6 single-course">
+            <div class="border bg-white rounded course-shadow">
+              <div class="course-img">
+                <span class="badge bg-warning course-badge">Marketing</span>
+                <img src="./images/course (6).png" alt="" />
+              </div>
+              <div class="course-details p-4">
+                <div class="details-header d-flex justify-content-between">
+                  <div class="lesson">
+                    <i class="fa-solid fa-book"></i>
+                    <span>59 Lesson</span>
+                  </div>
+                  <div class="ratings">
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.8 (31)</span>
+                  </div>
+                </div>
+                <h4 class="pt-3">
+                  Bases Matemáticas dios Álgebra Ecuacion
+                </h4>
+                <div class="instructor d-flex align-items-center py-2">
+                  <img src="./images/instructor.png" alt="" />
+                  <p class="pt-3 ps-2">Brian Cumin</p>
+                </div>
+                <hr />
+                <div class="course-footer d-flex justify-content-between align-items-center">
+                  <div class="footer-left">
+                    <span class="text-primary price">$46.00</span>
+                    <span class="text-decoration-line-through">$69.00</span>
+                  </div>
+                  <div class="footer-right">
+                    <a href="" class="text-decoration-none pe-2">See Details</a>
+                    <i class="fa-solid fa-arrow-right-long text-primary"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events section -->
+    <section class="events container py-5" id="events">
+      <div class="events-heading pt-5 pb-3 text-center">
+        <h2>Current Events</h2>
+        <p>We found 13 events available for you.</p>
+      </div>
+      <div class="row">
+      <!-- event-1 -->
+      <div class="col-12 col-lg-10 mx-auto">
+      <div
+        class="single-event d-lg-flex justify-content-between event-shadow px-5 py-4 align-items-center mx-auto mb-3">
+        <div class="event details">
+          <p>Jun 14, 2022 | 12:00 am - 2:30 pm | New York</p>
+          <h3>Digital transformation conference</h3>
+        </div>
+        <div>
+          <a href="" class="text-decoration-none">View More</a><i class="fa-solid fa-arrow-right text-primary ps-2"></i>
+        </div>
+      </div>
+    </div>
+      <!-- event-2 -->
+      <div class="col-12 col-lg-10 mx-auto">
+      <div
+        class="single-event d-lg-flex justify-content-between event-shadow px-5 py-4 align-items-center mx-auto mb-3">
+        <div class="event details">
+          <p>April 10, 2022 | 9:00 am - 5:00 pm | Mindahan</p>
+          <h3>World education day conference</h3>
+        </div>
+        <div>
+          <a href="" class="text-decoration-none">View More</a><i class="fa-solid fa-arrow-right text-primary ps-2"></i>
+        </div>
+      </div>
+      </div>
+      <!-- event-3 -->
+      <div class="col-12 col-lg-10 mx-auto">
+      <div
+        class="single-event d-lg-flex justify-content-between event-shadow px-5 py-4 align-items-center mx-auto mb-3">
+        <div class="event details">
+          <p>July 16, 2022 | 10:30 am - 1:30 pm | Weedpatch</p>
+          <h3>Foundations of global health</h3>
+        </div>
+        <div>
+          <a href="" class="text-decoration-none">View More</a><i class="fa-solid fa-arrow-right text-primary ps-2"></i>
+        </div>
+      </div>
+      </div>
+      <!-- event-4 -->
+      <div class="col-12 col-lg-10 mx-auto">
+      <div
+        class="single-event d-lg-flex justify-content-between event-shadow px-5 py-4 align-items-center mx-auto mb-3">
+        <div class="event details">
+          <p>March 24, 2022 | 10:30 am - 12:00 pm | Lnland</p>
+          <h3>Business creativity workshops</h3>
+        </div>
+        <div>
+          <a href="" class="text-decoration-none">View More</a><i class="fa-solid fa-arrow-right text-primary ps-2"></i>
+        </div>
+      </div>
+    </div>
+    </div>
+    </section>
+
+    <!-- pricing section -->
+    <section class="pricing container py-5" id="pricing">
+      <div class="pricing-heading pt-5 pb-3 text-center">
+        <h2>Simple</h2>
+        <h2>All Inclusive Pricing</h2>
+        <p>No contracts. No surprise fees.</p>
+      </div>
+
+      <div id="generic_price_table">
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <!-- table-1 -->
+              <div class="col-md-4">
+                <div class="generic_content clearfix border">
+                  <div class="generic_head_price clearfix">
+                    <div class="generic_head_content clearfix">
+                      <div class="head_bg"></div>
+                      <div class="head">
+                        <span>Basic</span>
+                      </div>
+                    </div>
+                    <div class="generic_price_tag clearfix">
+                      <span class="price">
+                        <span class="sign">$</span>
+                        <span class="currency">99</span>
+                        <span class="cent">.99</span>
+                        <span class="month">/MON</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="generic_feature_list">
+                    <ul>
+                      <li> 3 Months</li>
+                      <li> 30 Classes</li>
+                      <li> E-books</li>
+                      <li> One-time Payment</li>
+                      <li> Online Support</li>
+                    </ul>
+                  </div>
+                  <button class="btn btn-primary btn-lg mb-5 mt-3">Register</button>
+                </div>
+              </div>
+              <!-- table-2 -->
+              <div class="col-md-4">
+                <div class="generic_content active clearfix border">
+                  <div class="generic_head_price clearfix">
+                    <div class="generic_head_content clearfix">
+                      <div class="head_bg"></div>
+                      <div class="head">
+                        <span>Standard</span>
+                      </div>
+                    </div>
+                    <div class="generic_price_tag clearfix">
+                      <span class="price">
+                        <span class="sign">$</span>
+                        <span class="currency">199</span>
+                        <span class="cent">.99</span>
+                        <span class="month">/MON</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="generic_feature_list">
+                    <ul>
+                      <li> 12 Months</li>
+                      <li> 60 Classes</li>
+                      <li> E-books</li>
+                      <li> One-time Payment</li>
+                      <li> Online Support</li>
+                    </ul>
+                  </div>
+                  <button class="btn btn-primary btn-lg mb-5 mt-3">Register</button>
+                </div>
+              </div>
+                <!-- table-3 -->
+              <div class="col-md-4">
+                <div class="generic_content clearfix border">
+                  <div class="generic_head_price clearfix">
+                    <div class="generic_head_content clearfix">
+                      <div class="head_bg"></div>
+                      <div class="head">
+                        <span>Premium</span>
+                      </div>
+                    </div>
+                    <div class="generic_price_tag clearfix">
+                      <span class="price">
+                        <span class="sign">$</span>
+                        <span class="currency">299</span>
+                        <span class="cent">.99</span>
+                        <span class="month">/MON</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="generic_feature_list">
+                    <ul>
+                      <li> 18 Months</li>
+                      <li> 90 Classes</li>
+                      <li> E-books</li>
+                      <li> One-time Payment</li>
+                      <li> Online Support</li>
+                    </ul>
+                  </div>
+                  <button class="btn btn-primary btn-lg mb-5 mt-3">Register</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container ps-5">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="row">
+            <div class="col-md-4 mb-md-0 mb-4">
+              <h4>About</h4>
+              <ul class="list-unstyled">
+                <li><a href="#" class="d-block">Out story</a></li>
+                <li><a href="#" class="d-block">Awards</a></li>
+                <li><a href="#" class="d-block">Our Team</a></li>
+                <li><a href="#" class="d-block">Career</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-md-0 mb-4">
+              <h4>Company</h4>
+              <ul class="list-unstyled">
+                <li><a href="#" class="d-block">Our services</a></li>
+                <li><a href="#" class="d-block">Clients</a></li>
+                <li><a href="#" class="d-block">Contact</a></li>
+                <li><a href="#" class="d-block">Press</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-md-0 mb-4">
+              <h4>Resources</h4>
+              <ul class="list-unstyled">
+                <li><a href="#" class="d-block">Blog</a></li>
+                <li><a href="#" class="d-block">Newsletter</a></li>
+                <li><a href="#" class="d-block">Privacy Policy</a></li>
+                <li><a href="#" class="d-block">Blog</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-md-0 mb-4">
+          <h4>Sunrise Academy</h4>
+          <p>
+            Great lesson ideas and lesson plans for ESL teachers! Educators
+            can customize lesson plans to best.
+          </p>
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+        </form>
+      </div>
+    </div>
+    <div class="row mt-5 pt-4 border-top text-center w-75 mx-auto">
+      <div class="col-lg-12 mb-md-0 mb-4">
+        <p class="copyright mb-0">
+          Copyright &copy; All rights reserved. | Developed by <a href="https://shahriarrhythm.com/">Shahriar Rhythm</a>
+        </p>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap js cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
